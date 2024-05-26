@@ -1,0 +1,28 @@
+body{
+    background-color: lightblue;
+}
+p{
+    font-size: 50px;
+    background-color: white;
+    color: green;
+    text-align: center;
+}
+ul, ol{
+    font-size: 24px;
+    color: darkred;
+}
+ul li::marker{
+    color: blue;
+    font-size: 1.5em;
+}
+ol{
+    margin-top: 100px;
+}
+@counter-style emojies {
+    system: fixed;
+    symbols: 🐶 🐱 🐭 🐹 🐰 🦊 🐻 🐼;
+    suffix: " ";
+}
+ul.u2{
+    list-style: emojies;   
+}
